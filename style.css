@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('/media/bg.jpg') center center;
+  background-size: cover;
+  font-family: 'Balsamiq Sans', cursive;
+  background-color: darkgray;
+  min-height: 100vh;
+}
+
+.container{
+  padding: 20px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.game{
+  width: 600px;
+  height: 530px;
+  background: cornflowerblue;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgb(187, 186, 186);
+  padding: 1rem;
+}
+
+.circle{
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 50px;
+}
+
+.bottom{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin: 15px 10px 0px 10px;
+}
+
+button{
+  cursor: pointer;
+  font-family: 'Balsamiq Sans', cursive;
+  width: 120px;
+  height: 50px;
+}
+
+.reset{
+  padding: 15px 30px;
+  color: white;
+  background-color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.reset:hover{
+  background-color: white;
+  color:cornflowerblue;
+  transition: all 0.4s ease;
+}
+
+.music, .back{
+  padding: 5px 10px;
+  background-color: white;
+  color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  border-radius: 4px;
+}
+
+i{
+  color: cornflowerblue;
+  background: white;
+  font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.music:hover, .music:hover i, .back:hover{
+  background: cornflowerblue;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+/*screen size below 650px width */
+@media only screen and (max-width: 650px){
+
+  .game{
+    width: 350px;
+    height: 320px;
+  }
+  
+  .circle{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 50px;
+  }
+
+  button{
+    width: 100px;
+  }
+
+  .reset{
+    padding: 0;
+  }
+
+}
+
